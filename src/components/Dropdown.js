@@ -29,7 +29,7 @@ function Dropdown({ options, value, onChange }) {
     onChange(option);
   };
 
-  const renderedOptions = options.map((option) => {
+  const renderedOptions = options && options.map((option) => {
     return (
       <div
         className="hover:bg-sky-100 rounded cursor-pointer p-1"
