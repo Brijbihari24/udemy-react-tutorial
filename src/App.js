@@ -4,13 +4,12 @@ import NavigationProvider from './context/Navigation';
 import Link from './components/Link';
 import Route from './components/Route';
 import Accordion from "./components/Accordion"
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div>
-      <Link to="/dropdown">Go to Dropdown</Link>
-      <Link to="/accordian">Go to Accordian</Link>
-
+      <Sidebar />
       <div>
         <Route path="/dropdown">
           <Dropdown />
